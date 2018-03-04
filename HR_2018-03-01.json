@@ -1,0 +1,1 @@
+{"activities-heart": [{"dateTime": "2018-03-01", "value": {"customHeartRateZones": [], "heartRateZones": [{"max": 90, "min": 30, "name": "Out of Range"}, {"max": 126, "min": 90, "name": "Fat Burn"}, {"max": 153, "min": 126, "name": "Cardio"}, {"max": 220, "min": 153, "name": "Peak"}]}}], "activities-heart-intraday": {"dataset": [], "datasetInterval": 1, "datasetType": "second"}}
