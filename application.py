@@ -89,10 +89,16 @@ markdown_text2 = '''
 
 In this app I will explore personal Fitbit data in order to answer questions about my personal health as well as to evaluate the accuracy of the Fitbit monitoring system.
 
+The primary question that I set out to answer is:
+
+*How do my daily rhythms contribute to my fitness and fitness metrics?*
+
 -----
 ### Analysis of *Distance* and *Step* Data:
 
 Below the user can input a date (must be between `2018-02-16` and `2018-03-01`) and then view the daily cumulative summation of distance and step data.  Note that common sense tells us that this data should be highly correlated.
+
+In this visualization I chose to model cumulative hourly distance (as opposed to normal hourly counts) since the cumulative sum will better answer my question about when during any given day did I move the greatest distance. This helps me identify what activities are contributing, as well as identify 'plateaus' where I need to increase activity (i.e. take a stretch break).  Note that I did this for both distance and steps (partially to check data quality by ensuring they are correlated).
 
 
 '''
@@ -104,6 +110,8 @@ markdown_sleep = '''
 
 ### Analysis of *Sleep* data:
 
+In the context of evaluating daily activities, I also want to evaluate my sleep patterns.  Healthy adult sleep ranges from 7-9 hours.  The plot below helps my evaluate my personal sleep habits.
+
 Below is a heatmap of sleep activity.  `Red` represents time when I was awake, `blue` represents times when I was asleep, and `white` represents times when my sleep was *restless*.
 '''
 
@@ -112,6 +120,8 @@ markdown_HR = '''
 
 ### Analysis of *Heart Rate* data:
 
+The table below allos me to look at heart rate activity and see if it is correlated to the activites detailed above.
+
 Below is a time series plot of my heart rate activity.  You can clearly delineate times of activity from times of sleep.  Note that this graph is zoomable.
 '''
 
@@ -119,6 +129,8 @@ markdown_table = '''
 -----
 
 ### Table of daily data:
+
+Below I chose to add a table to shows daily summary metrics.  This primarily allows me to evaluate and answer the final part of my data question (how does my activity impact my *fitness metrics*).
 
 Below is a summary table of daily activity:
 '''
